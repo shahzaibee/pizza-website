@@ -17,7 +17,7 @@ export default function Home() {
       {/* contact section */}
       <Contact />
       {/* footer section */}
-      <Footer />
+    
     </>
   );
 }

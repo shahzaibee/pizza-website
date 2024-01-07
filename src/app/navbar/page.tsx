@@ -14,20 +14,28 @@ const Header = () => {
         <Link href={"/menu"}>Menu</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>Contact</Link>
+      </nav>
+      <nav className="hidden lg:flex">
         <Link
-          href={"/"}
-          className="bg-primarys text-white px-8 py-2 rounded-full"
+          href={"/login"}
+          className="font-bold text-black px-8 py-2 rounded-full"
         >
           Login
         </Link>
+        <Link
+          href={"/register"}
+          className="bg-primarys text-white px-4 py-2 rounded-full"
+        >
+          Register
+        </Link>
       </nav>
-      <nav className="lg:hidden block flex-col items-center gap-8 text-gray-500 font-semibold">
+      <nav className="lg:hidden block flex-col tems-center gap-8 text-gray-500 font-semibold">
         <Sheet>
           <SheetTrigger>
             <MenuIcon />
           </SheetTrigger>
           <div className="flex flex-col justify-center items-center">
-            <SheetContent className="">
+            <SheetContent className="bg-gray-600 text-white border-none">
               <Link href={"/"}>Home</Link>
               <br />
               <br />
@@ -42,8 +50,16 @@ const Header = () => {
               <br />
               <br />
               <Link
-                href={"/"}
-                className="bg-primarys text-white px-8 py-2 rounded-full"
+                href={"/register"}
+                className="bg-primarys text-white px-4 py-2 rounded-full"
+              >
+                Register
+              </Link>
+              <br />
+              <br />
+              <Link
+                href={"/login"}
+                className=" text-white px-5 py-2 rounded-full"
               >
                 Login
               </Link>
